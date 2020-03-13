@@ -1,0 +1,200 @@
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<link rel = "stylesheet" type="text/css" href = "static/css/modHomePage.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="static/js/parallax.min.js"></script>
+<script src="static/js/home.js"</script></script>
+{% extends "layout.html" %}
+{% block title %}
+Pablo A. Sandoval
+{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <section id="about">
+        <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/about.jpg">
+            <h1 class="about">about</h1>
+            <div class="boxAbout">
+                <div class="row about">
+                <div class="col-md">
+                    <i class="fa fa-user-circle-o icon" aria-hidden="true"></i>
+                    <p class="about">I am a software developer who is passionate on learning new things. I like to solve problems that can lead to an impact.
+                        I have framework skills such as flutter and flask; to which I've coded the front/back end of my personal projects.
+                    </p>
+                </div>
+            </div>
+            <div class="row about">
+                <div class="col-md">
+                    <i class="fa fa-headphones icon" aria-hidden="true"></i>
+                    <p class="about">I mostly like to hear hip-hop music; but generally Eminem. But I am open to other music.</p>
+                </div>
+            </div>
+            <div class="row about">
+                <div class="col-md">
+                    <i class="fa fa-gamepad icon" aria-hidden="true"></i>
+                    <p class="about">During my off time, I like to play basketball whenever I can. But most of the time I play video games with my friends.</p>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+    </section>
+
+    <section id="experience">
+        <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/experience.jpg">
+            <h1 class="experience">experience</h1>
+            <div class="row exp">
+                <div class="col-md arrange">
+                    <h4 class="title">research assistant</h4>
+                    <img class="workImg" src="static/images/expJob.jpg" alt="">
+                </div>
+                <div class="col-md mid">
+                    <p>
+                        <li>To help create a machine to see how well it can learn on automatically annotated data. The goal was to check if automatically generated training data is viable for machines, while using the programming language MATLAB</li>
+                        <li>Used three different supervised learning models to run through our 500 custom images. To get the four coordinates of where said object (mostly pedestrian) is in our images.</li>
+                        <li>Then compared the coordinates to our ground truth that I made using an annotated toolbox that was provided, to obtain three different Average Precision recall curve.</li>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="projects">
+        <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/projects.jpg">
+            <h1 class="projects">projects</h1>
+            <div class="row">
+                <div class="col-md arrange">
+                    <h4 class="title">scoreboard app</h4>
+                    <img class="projectsImg" src="static/images/bbApp.PNG" alt="">
+                </div>
+                <div class="col-md middle">
+                    <p>
+                        <li>Designed user interface by utilizing the cross-platform Flutter mobile framework</li>
+                        <li>Developed timer functions and scorekeeping functionality which kept track of winning side.</li>
+                        <li>As well as keeping track of fouls, time outs and bonus points</li>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md arrange">
+                    <h4 class="title">emoji censore bot api</h4>
+                    <img class="projectsImg" src="static/images/discordBot.png" alt="">
+                </div>
+                <div class="col-md middle">
+                    <p>
+                        <li>Using discord.py (Python) API, to get the users input of any inappropriate word.</li>
+                        <li>Contributed to source code utilizing GitHubs’ source control</li>                                                              
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="skills">
+        <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/skills.jpeg">
+            <h1 class="skills">skills</h1>
+            <div class="row" style="overflow: hidden;">
+                <div class="col-lg left">
+                    <h3 class="progress-title">c++</h3>
+                    <div class="meter">
+                        <span style="width:70%"></span>
+                        <p>70%</p>
+                    </div>
+
+                    <h3 class="progress-title">java</h3>
+                    <div class="meter">
+                        <span style="width:70%"></span>
+                        <p>70%</p>
+                    </div>
+
+                    <h3 class="progress-title">python</h3>
+                    <div class="meter">
+                        <span style="width:80%"></span>
+                        <p>80%</p>
+                    </div>
+            
+                    <h3 class="progress-title">ruby</h3>
+                    <div class="meter">
+                        <span style="width:80%"></span>
+                        <p>80%</p>
+                    </div>
+
+                    <h3 class="progress-title">dart</h3>
+                    <div class="meter">
+                        <span style="width:85%"></span>
+                        <p>85%</p>
+                    </div>
+
+                    <h3 class="progress-title">matlab</h3>
+                    <div class="meter">
+                        <span style="width:50%"></span>
+                        <p>50%</p>
+                    </div>
+                </div>
+
+                <div class="col-lg">
+                    <h3 class="progress-title">html</h3>
+                    <div class="meter">
+                        <span style="width:90%"></span>
+                        <p>90%</p>
+                    </div>
+
+                    <h3 class="progress-title">css</h3>
+                    <div class="meter">
+                        <span style="width:90%"></span>
+                        <p>90%</p>
+                    </div>
+
+                    <h3 class="progress-title">jquery</h3>
+                        <div class="meter">
+                            <span style="width:90%"></span>
+                            <p>90%</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="education">
+        <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/education.jpg">
+            <h1 class="education">education</h1>
+                <div class="row edu">
+                    <div class="col-md">
+                        <p class="edu">The University of Texas Rio Grande Valley</p>
+                        <p class="edu">B.S. Degree in Computer Science</p>
+                        <p class="edu">GPA: 3.10</p>
+                    </div>
+                    <div class="col-md">
+                        <p class="edu" style="text-align: right;">Graduated: 2019</p>
+                    </div>
+                </div>
+        </section>   
+    </section>
+
+    <section id="contact">
+        <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/contact.jpg">
+            <h1 class="contact">contact me</h1>
+            <div class="box">
+                <div class="contact-grid1-left">
+                    <div class="contact-grid1-left1">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        <h4 id="message">Contact By Email</h4>
+                        <ul>
+                            <li>pabloarmandosandoval@gmail.com></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-grid1-left">
+                    <div class="contact-grid1-left1">
+                        <span class="fa a fa-phone" aria-hidden="true"></span>
+                        <h4 id="message">Contact By Phone</h4>
+                        <ul>
+                            <li>Phone: (956)-579-4998</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+
+{% endblock %}
