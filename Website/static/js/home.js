@@ -109,3 +109,20 @@ var countUp = function() {
 };
 
 interval = setInterval(countUp, (1000 / (end + 1)));
+
+
+/*const htmlBar = document.querySelector('.bar-html')
+const csBar = document.querySelector('.bar-cs')
+
+var t1 = new TimelineLite()
+
+t1.fromTo(htmlBar, .75, {width: 'calc(0% - 6px)'}, {width: 'calc(90% - 6px)', ease: Power4.easeOut})
+    .fromTo(csBar, .75, {width: 'calc(0% - 6px)'}, {width: 'calc(95% - 6px)', ease: Power4.easeOut})
+
+const controller = new ScrollMagic.Controller()
+const scene = new ScrollMagic.Scene({
+    triggerElement: '.yet',
+    triggerHook: 0
+})
+.setTween(t1)
+.addTo(controller)*/
