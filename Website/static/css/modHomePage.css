@@ -1,5 +1,6 @@
 section#about {
     background: transparent;
+    
 }
 
 .boxAbout {
@@ -27,6 +28,7 @@ p.about {
 /*section experience*/
 section#experience {
     background: transparent;
+    overflow: hidden;
 }
 
 img.workImg {

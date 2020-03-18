@@ -1,3 +1,23 @@
+$(document).ready(function() {
+    // get the anchor link buttons
+  const menuBtn = $('.active');
+  // when each button is clicked
+  menuBtn.click(()=>{	
+    // set a short timeout before taking action
+    // so as to allow hash to be set
+    setTimeout(()=>{
+      // call removeHash function after set timeout
+      removeHash();
+    }, 5); // 5 millisecond timeout in this case
+  });
+
+  // removeHash function
+  // uses HTML5 history API to manipulate the location bar
+  function removeHash(){
+    history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+  }
+});
+
 /*$(document).ready(function() {
     let scroll_link = $('.scroll');
 
@@ -109,6 +129,8 @@ var countUp = function() {
 };
 
 interval = setInterval(countUp, (1000 / (end + 1)));
+
+
 
 
 /*const htmlBar = document.querySelector('.bar-html')

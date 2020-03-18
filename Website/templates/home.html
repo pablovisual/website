@@ -2,12 +2,7 @@
 <link rel = "stylesheet" type="text/css" href = "static/css/modHomePage.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="static/js/parallax.min.js" /></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-<script src="static/js/TimelineLite.min.js" /></script>
-<script src="static/js/TweenMax.min.js" /></script>
-<script src="static/js/CSSPlugin.min.js" /></script>
-<script src="static/js/home.js" /></script>
+
 {% extends "layout.html" %}
 {% block title %}
 Pablo A. Sandoval
@@ -17,7 +12,7 @@ Pablo A. Sandoval
     <section id="about">
         <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/about.jpg">
             <h1 class="about">about</h1>
-            <div class="boxAbout">
+            <div class="boxAbout" data-aos="fade-left">
                 <div class="row about">
                 <div class="col-md">
                     <i class="fa fa-user-circle-o icon" aria-hidden="true"></i>
@@ -47,11 +42,11 @@ Pablo A. Sandoval
         <section class="parallax-window" data-parallax="scroll" data-image-src="static/images/experience.jpg">
             <h1 class="experience">experience</h1>
             <div class="row exp">
-                <div class="col-md arrange">
+                <div class="col-md arrange" data-aos="fade-right" overflow: hidden;>
                     <h4 class="title">research assistant</h4>
                     <img class="workImg" src="static/images/expJob.jpg" alt="">
                 </div>
-                <div class="col-md mid">
+                <div class="col-md mid" data-aos="fade-left">
                     <p>
                         <li>To help create a machine to see how well it can learn on automatically annotated data. The goal was to check if automatically generated training data is viable for machines, while using the programming language MATLAB</li>
                         <li>Used three different supervised learning models to run through our 500 custom images. To get the four coordinates of where said object (mostly pedestrian) is in our images.</li>
