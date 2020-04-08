@@ -5,8 +5,8 @@ window.mobilecheck = function() {
     if (check) {
         $("body#webOnly").remove();
         // on mobile, show "mobile version not available at the moment".
-        $(".main-container").css("height", "100%")
-        $(".main-container").html('<div style="text-align: center; font-size: 50px; height: 100%; display: flex; align-items: center; justify-content: center;" id="mobile-message"> Sorry! Mobile version is not available at this moment :( </div>');
+        $(".mobile").css("height", "100%")
+        $(".mobile").html('<div style="text-align: center; font-size: 50px; height: 100%; display: flex; align-items: center; justify-content: center;" id="mobile-message"> Sorry! Mobile version is not available at this moment :( </div>');
     } 
 };
 window.mobilecheck();
