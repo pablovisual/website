@@ -40,7 +40,7 @@
 }
 
 
-body {
+body#webOnly{
     /*padding-top: 4rem;*/
     font-family: 'Titillium Web';
     background: grey;
